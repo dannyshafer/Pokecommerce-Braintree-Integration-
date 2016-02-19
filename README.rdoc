@@ -8,9 +8,9 @@ This is an example Braintree integration into a Rails app. The actual checkout f
 
 3. Set .env variables like so:
 
-	MERCHANT_ID=sdfhgdskjfgdfg
-	<br>
-	PUBLIC_KEY=sdfgdsfgdsfgsdfg
-	<br>
-	PRIVATE_KEY=234234kj234lk5j2h34l5kjk3
-	<br>
+	MERCHANT_ID=sdfhgdskjfgdfg  
+	
+	PUBLIC_KEY=sdfgdsfgdsfgsdfg  
+	
+	PRIVATE_KEY=234234kj234lk5j2h34l5kjk3  
+	
