@@ -14,4 +14,3 @@ This is an example Braintree integration into a Rails app. The actual checkout f
 	<br>
 	PRIVATE_KEY=234234kj234lk5j2h34l5kjk3
 	<br>
-4. Profit, but not really because Pokemon is owned by The Pokemon Company and this is just for an illustration. ;)
