@@ -1,0 +1,5 @@
+== README
+
+bundle
+
+set .env 
