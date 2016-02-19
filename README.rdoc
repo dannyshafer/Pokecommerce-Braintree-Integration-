@@ -1,13 +1,15 @@
 == README
 
-Bundle
+This is an example Braintree integration into a Rails app. The actual checkout form is on the "show" page for a Pokemon. 
 
-Migrate
+1. Bundle
 
-Set .env variables like so:
+2. Migrate
+
+3. Set .env variables like so:
 
 	MERCHANT_ID=sdfhgdskjfgdfg
 	PUBLIC_KEY=sdfgdsfgdsfgsdfg
 	PRIVATE_KEY=234234kj234lk5j2h34l5kjk3
 
-Profit.
+4. Profit, but not really because Pokemon is owned by The Pokemon Company and this is just for an illustration. ;)
