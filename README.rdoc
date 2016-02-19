@@ -10,4 +10,4 @@ Set .env variables like so:
 	PUBLIC_KEY=sdfgdsfgdsfgsdfg
 	PRIVATE_KEY=234234kj234lk5j2h34l5kjk3
 
-
+Profit.
