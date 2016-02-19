@@ -1,5 +1,13 @@
 == README
 
-bundle
+Bundle
 
-set .env 
+Migrate
+
+Set .env variables like so:
+
+	MERCHANT_ID=sdfhgdskjfgdfg
+	PUBLIC_KEY=sdfgdsfgdsfgsdfg
+	PRIVATE_KEY=234234kj234lk5j2h34l5kjk3
+
+
