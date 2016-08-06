@@ -1,11 +1,6 @@
 class PokemonsController < ApplicationController
   require "rubygems"
-  require "braintree"
-
-  Braintree::Configuration.environment = :sandbox
-  Braintree::Configuration.merchant_id = ENV['MERCHANT_ID']
-  Braintree::Configuration.public_key = ENV['PUBLIC_KEY']
-  Braintree::Configuration.private_key = ENV['PRIVATE_KEY']
+  require "stripe"
 
   # GET /pokemons
   # GET /pokemons.json
@@ -17,7 +12,6 @@ class PokemonsController < ApplicationController
   # GET /pokemons/1.json
   def show
     @pokemon = Pokemon.find(params[:id])
-    @token = Braintree::ClientToken.generate
   end
 
   # GET /pokemons/new
@@ -70,19 +64,15 @@ class PokemonsController < ApplicationController
   end
 
   def checkout
-    nonce = params[:payment_method_nonce]
-    result = Braintree::Transaction.sale(
-    :amount => "10.00", #could be any other arbitrary amount captured in params[:amount] if they weren't all $10.
-    :payment_method_nonce => nonce,
-    :options => {
-      :submit_for_settlement => true
-      }
-    )
   end
 
-  private
+def customers
+ @customers = Stripe::Customer.all
+end
+
+private
     # Never trust parameters from the scary internet, only allow the white list through.
     def pokemon_params
       params.require(:pokemon).permit(:name, :image_url)
     end
-end
+  end

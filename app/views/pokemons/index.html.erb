@@ -6,7 +6,7 @@
   <thead>
     <tr>
       <th>Name</th>
-      <th>Image url</th>
+      <th>Image</th>
       <th colspan="3"></th>
     </tr>
   </thead>
@@ -15,7 +15,7 @@
     <% @pokemons.each do |pokemon| %>
       <tr>
         <td><%= pokemon.name %></td>
-        <td><%= pokemon.image_url %></td>
+        <td><img src="<%= pokemon.image_url %>"></td>
         <td><%= link_to 'Show', pokemon %></td>
         <td><%= link_to 'Edit', edit_pokemon_path(pokemon) %></td>
         <td><%= link_to 'Destroy', pokemon, method: :delete, data: { confirm: 'Are you sure?' } %></td>
@@ -27,3 +27,4 @@
 <br>
 
 <%= link_to 'New Pokemon', new_pokemon_path %>
+
